@@ -1,4 +1,4 @@
-import './Styles/App.css';
+import './styles/App.css';
 import { RouterView } from './router';
 
 function App() {
