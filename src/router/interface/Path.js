@@ -1,5 +1,6 @@
 const name = {
-  Dashboard: '',
+  Home: '',
+  Dashboard: 'dash',
   About: 'about',
 };
 
