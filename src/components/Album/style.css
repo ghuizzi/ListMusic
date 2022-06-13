@@ -1,0 +1,32 @@
+.SongsCard img {
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+.SongsCard {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  margin-left: 50px;
+}
+.songsContent {
+  background: rgb(249, 137, 248);
+  background: radial-gradient(
+    circle,
+    rgba(249, 137, 248, 1) 0%,
+    rgba(148, 203, 233, 1) 100%
+  );
+}
+.cardEffect {
+  width: 75%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 40px;
+}
