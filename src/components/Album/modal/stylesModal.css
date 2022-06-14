@@ -1,3 +1,15 @@
 .modal{
-    height: 40%;
+    height: 100vh;
+}
+.modalbd{
+   
+    height: 100vh;
+    overflow: scroll;
+}
+.number {
+    display: inline;
+}
+.nameSong{
+    display: inline;
+    padding: 10px;
 }

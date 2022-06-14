@@ -1,8 +1,20 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-// import "../Styles/navBar.css";
-
+import { Container, Row, Col } from "react-bootstrap";
+import "./navBar.css";
 const Nav = () => {
-  return <div>Nav</div>;
+  return (
+    <div classname="navContent">
+      <Container>
+        <Row>
+          <Col>
+            {" "}
+            <a>Favorites</a>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
 };
 
 export default Nav;
