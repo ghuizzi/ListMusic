@@ -1,6 +1,9 @@
 import React from "react";
 import { Modal, Button } from "react-bootstrap";
 
+// pack icons
+import { AiTwotoneStar } from 'react-icons/ai';
+
 export function ListMusicModal({ show, onHide, artist, album, music }) {
   return (
     <Modal
@@ -20,6 +23,8 @@ export function ListMusicModal({ show, onHide, artist, album, music }) {
           music.map((music, index) => (
             <div key={index}>
               <p>{index + 1}</p>
+              {/* use icon */}
+              <AiTwotoneStar color="#e323a6" />
               <p>{music.name}</p>
             </div>
           ))}
