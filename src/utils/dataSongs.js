@@ -184,10 +184,10 @@ const Artists = [
   },
   //Daddy Yankee
   {
-    name: "Harry Style ",
+    name: "Daddy Yankee ",
     albums: [
       {
-        name: "Daddy Yankee",
+        name: "Lengend",
         picture: require("../image/dy.jpg"),
         age: 2022,
         description: "description",
