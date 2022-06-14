@@ -1,10 +1,15 @@
-.App {
-  text-align: center;
-  width:100vw;
-  overflow-x:hidden;
-  background: rgb(249,137,248);
-  background: radial-gradient(circle, rgba(249,137,248,1) 0%, rgba(148,203,233,1) 100%);
+.active {
+  background-color: #717171;
 }
 
-
-
+.App {
+  text-align: center;
+  width: 100vw;
+  overflow-x: hidden;
+  background: rgb(249, 137, 248);
+  background: radial-gradient(
+    circle,
+    rgba(249, 137, 248, 1) 0%,
+    rgba(148, 203, 233, 1) 100%
+  );
+}
