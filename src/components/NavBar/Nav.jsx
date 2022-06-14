@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import { routes } from '../../router/routes';
 import { Capitalize } from '../../utils';
-
 import './navBar.css';
-const Nav = () => {
+
+function Nav() {
   return (
     <div className="navContent">
       <Container>
@@ -28,6 +28,6 @@ const Nav = () => {
       </Container>
     </div>
   );
-};
+}
 
 export default Nav;
