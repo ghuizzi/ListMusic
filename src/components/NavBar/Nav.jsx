@@ -8,7 +8,7 @@ import { Capitalize } from '../../utils';
 import './navBar.css';
 const Nav = () => {
   return (
-    <div classname="navContent">
+    <div className="navContent">
       <Container>
         <Row>
           <Col>
