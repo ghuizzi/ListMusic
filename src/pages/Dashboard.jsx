@@ -9,7 +9,7 @@ import "../styles/Dash.css";
 function Dashboard() {
   return (
     <div className="bg-gradient">
-      <Container fluid className="py-4 px-3">
+      <Container classname="" fluid className="py-4 px-3">
         <Row className="contentCard">
           {dataArtists.map((artist) =>
             artist.albums.map((album, index) => (

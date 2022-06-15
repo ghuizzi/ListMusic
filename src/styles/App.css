@@ -1,6 +1,4 @@
-.active {
-  background-color: #717171;
-}
+
 
 .App {
   text-align: center;
@@ -12,4 +10,30 @@
     rgba(249, 137, 248, 1) 0%,
     rgba(148, 203, 233, 1) 100%
   );
+}
+.contenApp{
+ 
+  width: 40%;
+}
+.contentRow{
+  width: 49%;
+  margin-left: 25%;
+}
+.flex-row{
+  -webkit-flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.error{
+  font: bold 80px/1 arial;
+  text-transform: uppercase;
+  color: #c69c1e;
+  text-shadow: 0  2px  0   #8b6e15,
+               0  4px  0   #7c6213,
+               0  6px  0   #6e5611, 
+               0  8px  0   #5f4b0e, 
+               0 10px  0   #503f0c,
+               0 12px  0   #41330a,
+              3px 8px 15px rgba(0,0,0,0.1),
+              3px 8px  5px rgba(0,0,0,0.3);
 }
