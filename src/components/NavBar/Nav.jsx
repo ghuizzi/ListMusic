@@ -11,9 +11,10 @@ function Nav() {
     <div className="navContent">
       <Container>
         <Row>
-          <Col>
+          <Col className="linkContent">
             {routes[0].children.map((route, index) => (
               <NavLink
+              className="navlink"
                 key={index}
                 to={route.path}
                 // className="nav-link"
@@ -22,7 +23,7 @@ function Nav() {
                 {route.path === '' ? 'Home' : Capitalize(route.path)}
               </NavLink>
             ))}
-            <a>Favorites</a>
+            
           </Col>
         </Row>
       </Container>

@@ -6,7 +6,7 @@ import { dataArtists } from "../utils";
 
 // import "../styles/App.css";
 import "../styles/Dash.css";
-function Dashboard() {
+function Favorites() {
   return (
     <div className="bg-gradient">
       <Container fluid className="py-4 px-3">
@@ -34,4 +34,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default Favorites;

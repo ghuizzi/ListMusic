@@ -6,3 +6,25 @@
   text-align: center;
   color: rgb(39, 36, 36);
 }
+.contentCard{
+  width: 80%;
+  margin-left: 30%;
+ 
+}
+
+  .relative{
+    position: relative;
+  }
+  
+  .absolute_badge{
+    position: absolute;
+    top: 0px;
+    right: -5px;
+    border-radius: 20px 0 0 20px ;
+    background: rgb(130 243 238 / 57%) 100%;
+    padding: 5px 10px;
+    color: white;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid white;
+  }

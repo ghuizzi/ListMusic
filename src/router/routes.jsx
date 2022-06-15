@@ -1,13 +1,13 @@
-import React from 'react';
-import { useRoutes } from 'react-router-dom';
-import { IPath } from './interface';
+import React from "react";
+import { useRoutes } from "react-router-dom";
+import { IPath } from "./interface";
 
-import { LayoutApp } from './layout';
-import { Home, About, Dashboard } from '../pages';
+import { LayoutApp } from "./layout";
+import { Home, About, Dashboard, Favorites } from "../pages";
 
 export const routes = [
   {
-    path: '/',
+    path: "/",
     element: <LayoutApp />,
     children: [
       {
@@ -21,6 +21,10 @@ export const routes = [
       {
         path: IPath.About,
         element: <About />,
+      },
+      {
+        path: IPath.Favorites,
+        element: <Favorites />,
       },
     ],
   },
