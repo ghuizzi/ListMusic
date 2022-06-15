@@ -1,9 +1,7 @@
-import "./styles/App.css";
-import { RouterView } from "./router";
-import Nav from "./components/NavBar/Nav";
+import './styles/App.css';
+import { RouterView } from './router';
 
 function App() {
-  <Nav />;
   return <RouterView />;
 }
 
