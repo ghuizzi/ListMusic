@@ -1,20 +1,26 @@
-import React from "react";
-import { Modal, Button } from "react-bootstrap";
-
-// pack icons
-import { AiTwotoneStar } from "react-icons/ai";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Modal, Button } from 'react-bootstrap';
+import { Favorite } from '../../Favorite';
 
 // import "./styles.css ";
 // import styles from './styles.css'
 
 export function ListMusicModal({ show, onHide, artist, album, music }) {
+  const navigate = useNavigate();
+
+  const handleFavoritoSong = (objMusic) => {
+    navigate('/favorites', { state: { ...objMusic } });
+    // console.log(e);
+  };
+
   return (
     <div>
       <Modal
         style={{
-          alignIitems: "center",
-          justifyContent: "center",
-          display: " flex",
+          alignIitems: 'center',
+          justifyContent: 'center',
+          display: ' flex',
         }}
         classname="modal"
         show={show}
@@ -28,24 +34,26 @@ export function ListMusicModal({ show, onHide, artist, album, music }) {
         </Modal.Header>
 
         <Modal.Body
-          style={{ overflowY: "scroll", height: "15rem" }}
+          style={{ overflowY: 'scroll', height: '15rem' }}
           classname="modalbd"
         >
           <h4>{album}</h4>
           {music != null &&
             music.map((music, index) => (
-              <div style={{ padding: "10px" }} key={index}>
-                <p style={{ display: "inline" }} classname="number ">
+              <div style={{ padding: '10px' }} key={index}>
+                <p style={{ display: 'inline' }} classname="number ">
                   {index + 1}
                 </p>
                 <p
-                  style={{ display: "inline", padding: "10px" }}
+                  style={{ display: 'inline', padding: '10px' }}
                   classname="nameSong"
                 >
                   {music.name}
                 </p>
-                {/* use icon */}
-                <AiTwotoneStar color="#e323a6" />
+                <Favorite
+                  data={{ num: index + 1, nameMusic: music.name }}
+                  onClick={handleFavoritoSong}
+                />
               </div>
             ))}
         </Modal.Body>

@@ -1,12 +1,16 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import { Album } from "../components/Album";
-import { dataArtists } from "../utils";
+import { Album } from '../components/Album';
+import { dataArtists } from '../utils';
 
 // import "../styles/App.css";
-import "../styles/Dash.css";
+import '../styles/Dash.css';
 function Favorites() {
+  const location = useLocation();
+  console.log(location.state);
+
   return (
     <div className="bg-gradient">
       <Container fluid className="py-4 px-3">
